@@ -1,20 +1,25 @@
-// coerção
-const n1 = 1
-const n2 = '3'
-// coerção implícita
-console.log(n1 + n2)
-// coerção explícita
-const n4 = n1 + Number(n2)
-console.log(n4)
+// comparação
+console.log(1 == 1) // true
+console.log(1 == '1') // true
+console.log(1 === "1") // false 
+console.log(1 === 1) // true com tipos iguais
+console.log(true == 1)
+console.log(1 == [1]) 
+console.log(null === null)
+console.log(undefined === undefined)
 
 
 
 
 
-
-
-
-
+// // coerção
+// const n1 = 1
+// const n2 = '3'
+// // coerção implícita
+// console.log(n1 + n2)
+// // coerção explícita
+// const n4 = n1 + Number(n2)
+// console.log(n4)
 
 
 
