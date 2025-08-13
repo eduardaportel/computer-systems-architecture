@@ -1,17 +1,39 @@
-var lang = "JavaScript"
-console.log("Learning " + lang)
+// coerção
+const n1 = 1
+const n2 = '3'
+// coerção implícita
+console.log(n1 + n2)
+// coerção explícita
+const n4 = n1 + Number(n2)
+console.log(n4)
 
-var lang = "Java"
-console.log("Learning " + lang)
 
-var age = 20
-console.log(`Hi, ${name}`)
 
-if (age >= 20){
-    var name = "Eduarda"
-    console.log(`Congrats, ${name}. You can drive now!`)
-}
 
+
+
+
+
+
+
+
+
+
+
+
+// var lang = "JavaScript"
+// console.log("Learning " + lang)
+
+// var lang = "Java"
+// console.log("Learning " + lang)
+
+// var age = 20
+// console.log(`Hi, ${name}`)
+
+// if (age >= 20){
+//     var name = "Eduarda"
+//     console.log(`Congrats, ${name}. You can drive now!`)
+// }
 
 
 
