@@ -73,6 +73,33 @@
 
 // f(g())
 
+function f(){
+    let name = 'Eduarda'
+    function g(){
+        console.log(name)
+    }
+    g()
+}
+f()
+// closure 
+function hello(){
+    let name = 'Eduarda'
+    return function(){
+        console.log(`Hello, ${name}`)
+    }
+}
+helloResult = hello()
+helloResult() // Hello, Eduarda
+
+
+
+
+
+
+
+
+
+
 
 
 
