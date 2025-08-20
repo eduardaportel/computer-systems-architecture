@@ -23,21 +23,55 @@
 
 // // funções
 // arrow function
-const hello = () => console.log('Hello')
-hello()
+// const hello = () => console.log('Hello')
+// hello()
 
-const Jesus = () => console.log('Jesus')
-Jesus()
+// const Jesus = () => console.log('Jesus')
+// Jesus()
 
-const triplo = (n) => {
-    return n * 3
-}
-console.log(triplo(6))
+// const triplo = (n) => {
+//     return n * 3
+// }
+// console.log(triplo(6))
 
+// const nomes = ['Eduarda','Emanuelle', 'Eduardo'];
 
+// const apenasComE = nomes.filter((n) => n.startsWith('E'));
 
+// console.log("Apenas com E");
+// console.log(apenasComE);
 
+// closure
+// armazenando uma função em uma variável
+// let umaFuncao = function(){
+//     console.log("Fui armazenada em uma variável")
+// }
+// umaFuncao()
+// // função que recebe e executa outra função
+// function f(funcao){
+//     funcao()
+// }
+// f(umaFuncao)
+// f(() => console.log(3*2))
 
+// f(function(){
+//     console.log('Fui criada nos parênteses de f')
+//     }
+// )
+
+// function g(){
+//     function outraFuncao(){
+//         console.log('Fui criada em g')
+//     }
+//     return outraFuncao
+// }
+// gResult = g()
+// console.log(gResult)
+// gResult()
+
+// g()()
+
+// f(g())
 
 
 
