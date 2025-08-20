@@ -73,37 +73,52 @@
 
 // f(g())
 
-function f(){
-    let name = 'Eduarda'
-    function g(){
-        console.log(name)
+// function f(){
+//     let name = 'Eduarda'
+//     function g(){
+//         console.log(name)
+//     }
+//     g()
+// }
+// f()
+// // closure 
+// function hello(){
+//     let name = 'Eduarda'
+//     return function(){
+//         console.log(`Hello, ${name}`)
+//     }
+// }
+// helloResult = hello()
+// helloResult() // Hello, Eduarda
+
+// function saudacaoFactory(saudacao, name){
+//     return function (){
+//         console.log(saudacao + ',' + name)
+//     }
+// }
+
+// let helloDuda = saudacaoFactory('Hello', 'Duda')
+// let byeDuda = saudacaoFactory('Bye', 'Duda')
+
+// helloDuda()
+// byeDuda()
+
+function counterFactory(){
+    let cont = 1
+    function f1(){
+        console.log(cont)
     }
-    g()
-}
-f()
-// closure 
-function hello(){
-    let name = 'Eduarda'
-    return function(){
-        console.log(`Hello, ${name}`)
+    cont++
+    function f2(){
+        console.log(cont)
     }
-}
-helloResult = hello()
-helloResult() // Hello, Eduarda
-
-function saudacaoFactory(saudacao, name){
-    return function (){
-        console.log(saudacao + ',' + name)
-    }
+    return {f1, f2}
 }
 
-let helloDuda = saudacaoFactory('Hello', 'Duda')
-let byeDuda = saudacaoFactory('Bye', 'Duda')
+let eAgoraResult = eAgora()
 
-helloDuda()
-byeDuda()
-
-
+eAgoraResult.f1() // 1
+eAgoraResult.f2() // 2
 
 
 
