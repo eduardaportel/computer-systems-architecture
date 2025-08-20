@@ -23,6 +23,36 @@
 
 // // funções
 
+// funções anônimas
+const dobro = function (n) {
+    return n * 2
+}
+
+console.log(dobro(8))
+
+const triplo = function (n=5){
+    return n * 3
+}
+console.log(triplo(3))
+console.log(triplo())
+
+const quadruplo = function (n = 4){
+    return n * 4
+}
+console.log(quadruplo())
+console.log(quadruplo(5))
+
+
+
+
+
+
+
+
+
+
+
+
 // function hello(){
 //     console.log("Hello, World!")
 // }
