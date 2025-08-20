@@ -22,25 +22,45 @@
 // console.log(v1)
 
 // // funções
+// arrow function
+const hello = () => console.log('Hello')
+hello()
 
-// funções anônimas
-const dobro = function (n) {
-    return n * 2
-}
+const Jesus = () => console.log('Jesus')
+Jesus()
 
-console.log(dobro(8))
-
-const triplo = function (n=5){
+const triplo = (n) => {
     return n * 3
 }
-console.log(triplo(3))
-console.log(triplo())
+console.log(triplo(6))
 
-const quadruplo = function (n = 4){
-    return n * 4
-}
-console.log(quadruplo())
-console.log(quadruplo(5))
+
+
+
+
+
+
+
+
+
+// // funções anônimas
+// const dobro = function (n) {
+//     return n * 2
+// }
+
+// console.log(dobro(8))
+
+// const triplo = function (n=5){
+//     return n * 3
+// }
+// console.log(triplo(3))
+// console.log(triplo())
+
+// const quadruplo = function (n = 4){
+//     return n * 4
+// }
+// console.log(quadruplo())
+// console.log(quadruplo(5))
 
 
 
