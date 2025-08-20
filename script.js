@@ -91,6 +91,19 @@ function hello(){
 helloResult = hello()
 helloResult() // Hello, Eduarda
 
+function saudacaoFactory(saudacao, name){
+    return function (){
+        console.log(saudacao + ',' + name)
+    }
+}
+
+let helloDuda = saudacaoFactory('Hello', 'Duda')
+let byeDuda = saudacaoFactory('Bye', 'Duda')
+
+helloDuda()
+byeDuda()
+
+
 
 
 
