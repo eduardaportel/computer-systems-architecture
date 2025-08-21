@@ -103,22 +103,22 @@
 // helloDuda()
 // byeDuda()
 
-function counterFactory(){
-    let cont = 1
-    function f1(){
-        console.log(cont)
-    }
-    cont++
-    function f2(){
-        console.log(cont)
-    }
-    return {f1, f2}
-}
+// function counterFactory(){
+//     let cont = 1
+//     function f1(){
+//         console.log(cont)
+//     }
+//     cont++
+//     function f2(){
+//         console.log(cont)
+//     }
+//     return {f1, f2}
+// }
 
-let eAgoraResult = eAgora()
+// let eAgoraResult = eAgora()
 
-eAgoraResult.f1() // 1
-eAgoraResult.f2() // 2
+// eAgoraResult.f1() // 1
+// eAgoraResult.f2() // 2
 
 
 
@@ -259,3 +259,36 @@ eAgoraResult.f2() // 2
 // // console.log(a)
 // // console.log(b)
 // // console.log(c,d)
+
+// function saudacaoFactory(saudacao, name){
+//     return function (){
+//         console.log(saudacao + ',' + name)
+//     }
+// // }
+
+// // eu
+// function calculadora(){
+//     function soma(a, b){
+//         return a + b;
+//     }
+
+//     function subtracao(a, b){
+//         return a - b;
+//     }
+// } return console.log(calculadora.soma(3,6))
+
+
+
+
+// mazzei
+// let calculadora = {    
+//     soma: 12,
+//     soma: (a,b) => a + b,
+//     subtracao: function (a,b) {
+//         return a - b;
+//     },
+// };
+
+// console.log(calculadora.soma(3,4))
+// console.log(calculadora.subtracao(5,2))
+// console.log("valor de soma: ", calculadora.soma);
