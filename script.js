@@ -1,3 +1,24 @@
+function somaAte(numero){
+    return numero >=0
+    ? Promise.resolve((numero * (numero + 1)/ 2))
+    : Promise.reject("Somente números positivos")
+}
+
+somaAte(10)
+    .then((res) => {
+        console.log(res)
+        return res
+    })
+    .then((res) => {
+        res1 = res * 10
+        console.log(res1)
+    })
+    .catch((err) =>{
+        console.log(err)
+    })
+
+
+
 // var a = [1]
 // var b = [1]
 
