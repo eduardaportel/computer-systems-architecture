@@ -1,12 +1,25 @@
-function somaAte(numero){
-    return numero >=0
-    ? Promise.resolve((numero * (numero + 1)/ 2))
-    : Promise.reject("Somente números positivos")
+function sumUntil(number){
+    return number >=0
+    ? Promise.resolve((number * (number + 1)/ 2))
+    : Promise.reject("Only positive numbers are allowed")
 }
 
-res = somaAte(10)
-console.log(res)
+// async await
+async function chamadaAssincrona(){
+    try {
+        res = await sumUntil(10)
+        console.log(res)
+        res1 = res * 10
+        console.log(res1)
+    }catch(err){
+        console.log(err)
+    }
 
+} 
+chamadaAssincrona()
+
+
+// then catch 
 // somaAte(10)
 //     .then((res) => {
 //         console.log(res)
