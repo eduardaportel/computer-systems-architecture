@@ -4,18 +4,21 @@ function somaAte(numero){
     : Promise.reject("Somente números positivos")
 }
 
-somaAte(10)
-    .then((res) => {
-        console.log(res)
-        return res
-    })
-    .then((res) => {
-        res1 = res * 10
-        console.log(res1)
-    })
-    .catch((err) =>{
-        console.log(err)
-    })
+res = somaAte(10)
+console.log(res)
+
+// somaAte(10)
+//     .then((res) => {
+//         console.log(res)
+//         return res
+//     })
+//     .then((res) => {
+//         res1 = res * 10
+//         console.log(res1)
+//     })
+//     .catch((err) =>{
+//         console.log(err)
+//     })
 
 
 
