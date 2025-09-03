@@ -5,7 +5,7 @@ function sumUntil(number){
 }
 
 // async await
-async function chamadaAssincrona(){
+async function asyncCall(){
     try {
         res = await sumUntil(10)
         console.log(res)
@@ -16,7 +16,16 @@ async function chamadaAssincrona(){
     }
 
 } 
-chamadaAssincrona()
+asyncCall()
+
+
+
+
+
+
+
+
+
 
 
 // then catch 
